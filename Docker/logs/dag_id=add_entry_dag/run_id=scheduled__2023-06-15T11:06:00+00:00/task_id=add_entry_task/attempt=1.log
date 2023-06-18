@@ -1,0 +1,26 @@
+[2023-06-15T11:07:01.918+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: add_entry_dag.add_entry_task scheduled__2023-06-15T11:06:00+00:00 [queued]>
+[2023-06-15T11:07:01.925+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: add_entry_dag.add_entry_task scheduled__2023-06-15T11:06:00+00:00 [queued]>
+[2023-06-15T11:07:01.926+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-15T11:07:01.927+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2023-06-15T11:07:01.927+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-15T11:07:01.935+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): add_entry_task> on 2023-06-15 11:06:00+00:00
+[2023-06-15T11:07:01.943+0000] {standard_task_runner.py:55} INFO - Started process 2977 to run task
+[2023-06-15T11:07:01.946+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'add_entry_dag', 'add_entry_task', 'scheduled__2023-06-15T11:06:00+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/postgres_dag.py', '--cfg-path', '/tmp/tmp8swke6l_']
+[2023-06-15T11:07:01.948+0000] {standard_task_runner.py:83} INFO - Job 101: Subtask add_entry_task
+[2023-06-15T11:07:02.002+0000] {task_command.py:389} INFO - Running <TaskInstance: add_entry_dag.add_entry_task scheduled__2023-06-15T11:06:00+00:00 [running]> on host ff7147a0d5a7
+[2023-06-15T11:07:02.053+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=add_entry_dag
+AIRFLOW_CTX_TASK_ID=add_entry_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-15T11:06:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-15T11:06:00+00:00
+[2023-06-15T11:07:02.063+0000] {base.py:73} INFO - Using connection ID 'postgres_conn' for task execution.
+[2023-06-15T11:07:02.067+0000] {sql.py:364} INFO - Running statement: INSERT INTO assignment_table (execution_time) VALUES ('2023-06-15 11:07:02.054661'), parameters: None
+[2023-06-15T11:07:02.069+0000] {sql.py:373} INFO - Rows affected: 1
+[2023-06-15T11:07:02.070+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-06-15T11:07:02.078+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=add_entry_dag, task_id=add_entry_task, execution_date=20230615T110600, start_date=20230615T110701, end_date=20230615T110702
+[2023-06-15T11:07:02.118+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-06-15T11:07:02.132+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
