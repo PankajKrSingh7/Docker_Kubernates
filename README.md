@@ -44,11 +44,12 @@ create_table_task >> add_entry_task
 ```
 
 * Dag with two tasks
-<img width="513" alt="Dags" src="https://github.com/PankajKrSingh7/Docker-Kubernates/assets/54628129/c1c7d6fb-0c69-49ee-9e5b-3d329ef342ab">
+<img width="513" alt="Dags" src="https://github.com/PankajKrSingh7/Docker_Kubernates/assets/54628129/6f527f30-5b28-4a9b-9e12-42f8cffebf01">
 
 
 * Table created with imestamp values
-<img width="315" alt="table_entries_1" src="https://github.com/PankajKrSingh7/Docker-Kubernates/assets/54628129/6e7de214-b063-4609-9dcb-fc82d1566f39">
+
+<img width="315" alt="table_entries_1" src="https://github.com/PankajKrSingh7/Docker_Kubernates/assets/54628129/c684a35b-1a48-4aae-be9c-8113d93fdb84">
 
 
 
@@ -104,12 +105,14 @@ kubectl apply -f airflow-service.yaml
 
 * Accessed the airflow webserver by running the command minikube service airflow. My airflow is accessible on http://127.0.0.1:54868 Upon logging in, the dag was visible, then created a postgres connection and then ran my dag, it has been succesfully executed.
 
-<img width="554" alt="kubernates-airflow" src="https://github.com/PankajKrSingh7/Docker-Kubernates/assets/54628129/e4b1cacb-5c27-4c72-8c9e-a0b3fb64e825">
+<img width="554" alt="kubernates-airflow" src="https://github.com/PankajKrSingh7/Docker_Kubernates/assets/54628129/b8bcc928-18f3-40e5-b009-a881eba2d64c">
+
 
 * Dags
+<img width="396" alt="dags_2" src="https://github.com/PankajKrSingh7/Docker_Kubernates/assets/54628129/56630efa-8512-45fc-814f-96a25959118c">
 
-<img width="396" alt="dags_2" src="https://github.com/PankajKrSingh7/Docker-Kubernates/assets/54628129/971f856e-fef5-4de1-bcbe-5e2150e2df7e">
 
 * Verified the entries in the table 
-<img width="391" alt="table_entries_2" src="https://github.com/PankajKrSingh7/Docker-Kubernates/assets/54628129/13fb96eb-1dc6-4ebd-b06c-6ae07e6e07ab">
+
+<img width="391" alt="table_entries_2" src="https://github.com/PankajKrSingh7/Docker_Kubernates/assets/54628129/3dd01dc0-dc37-486d-b43c-84bfa0b13194">
 
